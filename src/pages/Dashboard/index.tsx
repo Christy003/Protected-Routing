@@ -1,11 +1,14 @@
-import React from "react";
-function Dashboard(){
+import React, { useState } from 'react';
 
-    return(
-        <>
-        <p>  Welcome </p>
-        <p>Dashboard</p>
-        </>
-    );
+function Dashboard(){
+	const [isAuth,setisAuth]=useState(false);
+	return(
+		<>
+			<p>  Welcome </p>
+			<p>Dashboard</p>
+			<button onClick={()=>setisAuth(true)}>Log In</button>
+			<button onClick={()=>setisAuth(false)}>Logout</button>
+		</>
+	);
 }
 export default Dashboard;
