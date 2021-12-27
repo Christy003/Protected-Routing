@@ -11,15 +11,17 @@ const Login = () => {
 	const history = useHistory();
   
 	const onSubmit = (username: string, password: string) => {
-		if (username === Data[0].username &&
-		  password === Data[0].password 
+    for (let i = 0; i < Data.length; i++) {
+		if (username === Data[i].username &&
+		  password === Data[i].password 
 		) {
-		  history.push("/Dashboard");
+		   history.push("/Dashboard");
       localStorage.setItem("isAuthenticted","true");
 		} else {
 		   console.log("Invalid details");
-      return(<div>Invalid username or password</div>)
+      // return(<div>Invalid username or password</div>)
 		}
+  }
 	  };return (
         <div>
            <h3> Login Page </h3>
