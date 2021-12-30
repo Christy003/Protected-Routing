@@ -27,9 +27,10 @@ function App(){
 			<hr/>
 			<Switch>
 			<Route exact path ="/Login" component={Login}/>
-			<ProtectedRoute exact path ="/Dashboard" component={Dashboard}/>
+			<ProtectedRoute exact path ="/Dashboard" component={Dashboard} />
+			{/* <Route exact path ="/PageNotFound"  component={PageNotFound}/> */}
 			<Route exact path ="/About" component={About}/>
-			<Route exact path ="/PageNotFound" component={PageNotFound}/>
+			<Route path='*' exact={true} component={PageNotFound} />
 			</Switch>
 		</BrowserRouter>
 	);
