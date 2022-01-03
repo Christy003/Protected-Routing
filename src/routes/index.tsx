@@ -28,7 +28,6 @@ function App(){
 			<Switch>
 			<Route exact path ="/Login" component={Login}/>
 			<ProtectedRoute exact path ="/Dashboard" component={Dashboard} />
-			{/* <Route exact path ="/PageNotFound"  component={PageNotFound}/> */}
 			<Route exact path ="/About" component={About}/>
 			<Route path='*' exact={true} component={PageNotFound} />
 			</Switch>

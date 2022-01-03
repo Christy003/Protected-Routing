@@ -22,7 +22,6 @@ const Login = () => {
 		} else {
       
 		   console.log("Invalid details");
-      // return(<div>Invalid username or password</div>)
 		}
   }
 	  };return (

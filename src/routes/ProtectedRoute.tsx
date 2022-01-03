@@ -11,13 +11,5 @@ function ProtectedRoute({component:Component,...restofprops}:any)
 
  );
 
-
-//  if(isAuthenticated){
-//     return <Route {...restofprops}/> ;
-//  }
-//  return <Redirect to="/PageNotFound"/>;
-   
-
-
 }
 export default ProtectedRoute ;
