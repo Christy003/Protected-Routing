@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import PageNotFound from '../PageNotFound';
-import './login.css';
+// import './login.css';
 export const Data=[
     {username:"test@123",password:"1234567"},
 	{username:"exam789",password:"abcdef"}

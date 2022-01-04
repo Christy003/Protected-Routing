@@ -4,7 +4,9 @@
     "description": "",
     "main": "./index.js",
     "jest": {
-        "verbose": true
+        "verbose": true ,
+        "moduleNameMapper": {"^React$": "<protectedrouting>/node_modules/react"}
+
     },
     "scripts": {
         "start": "webpack-dev-server --mode development --open --hot",

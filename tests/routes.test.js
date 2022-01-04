@@ -24,9 +24,9 @@ describe('routes using array of routers', () => {
 
     expect(pathMap['/Login']).toBe(Login);
   })
-  it('should show Dashboard component for /Dashboard router', () => {
-    expect(pathMap['/Dashboard']).toBe(Dashboard);
-  })
+  // it('should show Dashboard component for /Dashboard router', () => {
+  //   expect(pathMap['/Dashboard']).toBe(Dashboard);
+  // })
   it('should show About component  for /About router', () => {
     expect(pathMap['/About']).toBe(About);
   })
