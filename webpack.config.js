@@ -23,10 +23,27 @@ module.exports = {
         exclude: /node_modules/,
         loader: require.resolve("babel-loader"),
       },
+      // {
+      //   test: /\.css$/,
+      //   exclude: /node_modules/,
+        
+      // },
       {
         test: /\.css$/,
-        exclude: /node_modules/,
-        
+        include: path.join(__dirname, 'src'),
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              sourceMap: true
+            }
+          },
+          // { loader: 'sass-loader' }
+        ]
       },
       {
        test: /\.tsx?$/,
