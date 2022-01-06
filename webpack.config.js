@@ -14,7 +14,7 @@ module.exports = {
   ],
   resolve: {
     modules: [__dirname, "src", "node_modules"],
-    extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
+    extensions: ["*", ".js", ".jsx", ".tsx", ".ts",".css"],
   },
   module: {
     rules: [
@@ -25,7 +25,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        exclude: /node_modules/,
+        
       },
       {
        test: /\.tsx?$/,

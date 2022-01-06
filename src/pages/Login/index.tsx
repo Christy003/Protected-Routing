@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import PageNotFound from '../PageNotFound';
-// import './login.css';
+import  styles from'./login.css';
+
 export const Data=[
     {username:"test@123",password:"1234567"},
 	{username:"exam789",password:"abcdef"}
@@ -25,7 +26,7 @@ const Login = () => {
 		}
   }
 	  };return (
-        <div className='form'>
+        <div className={styles.form}>
            <h3> Login Page </h3>
             <br></br>
             <label>Username:</label>
